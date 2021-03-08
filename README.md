@@ -1,1 +1,1 @@
-# rsschool-cv
+[Ссылка на cv-страницу](https://CatFasty.github.io/rsschool-cv/cv)
