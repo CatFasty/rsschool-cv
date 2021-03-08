@@ -1,0 +1,253 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	max-width: 1230px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+body {
+	color: #1a1a1a;
+	font-size: 20px;
+	line-height: 25px;
+	/* font-family: 'Fira Sans', sans-serif; */
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.header {
+	background-color: #292f31;
+	min-height: 400px;
+}
+
+.header__top {
+	display: flex;
+	justify-content: space-between;
+	height: 80px;
+	align-items: center;
+}
+
+.menu__list {
+	/* padding-inline-start: 0px; */
+	display: flex;
+	list-style-type: none;
+}
+
+.menu__list li + li {
+	margin-left: 70px;
+}
+
+.header__top a {
+	color: #fefefe;
+	text-transform: uppercase;
+	padding-bottom: 3px;
+	transition: all .5s; /*чтобы линия подчеркивания появлялась в течении пол секунды*/
+	border-bottom: 1px solid transparent; /* чтобы transition сработал */
+	opacity: 0.5;
+}
+
+.header__top a:hover {
+	border-bottom: 1px solid #fefefe;
+	opacity: 1;
+}
+
+.header__content {
+	color: #fefefe;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0px 20px;
+	line-height: 45px;
+}
+
+.header__title {
+	font-weight: 600;
+	font-size: 70px;
+	line-height: 70px;
+	color: #fefefe;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #fefefe;
+}
+
+.header__description {
+	text-transform: uppercase;
+	color: black;
+	font-weight: 200;
+	font-size: 25px;
+	margin-bottom: 20px;
+	background-color: #e8e8e8;
+	border-radius: 50px;
+	text-align: center;
+}
+
+.header__text {
+	padding-top: 30px;
+}
+
+.contact {
+	list-style-type: none;
+	font-size: 19px;
+}
+
+.header__contact a {
+	color: #fefefe;
+	opacity: 0.5;
+	transition: all .5s;
+}
+.header__contact a:hover {
+	opacity: 1;
+}
+
+span {
+	text-transform: uppercase;
+
+	font-weight: 400;
+}
+
+.photo__hero {
+	border-radius: 50px;
+}
+
+.summary {
+	padding: 40px 0 15px 0;
+	background-color: #f5f5f5;
+}
+
+.summary__title {
+	margin: 0 0 30px 0;
+}
+
+.title {
+	font-size: 28px;
+	line-height: 45px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.summary__items {
+	display: flex;
+	flex-wrap: wrap; /* позволим переходить колонкам на другую строку, применяем ОБЯЗАТЕЛЬНО только к главному контейнеру!*/
+	margin: 0px -7.5px; /* чтобы раздвинуть флекс контейнер: отрицательный марджин  на половину отступа */
+}
+
+.summary__items-column {
+	padding: 0px 7.5px; /*сдивагаем паддингом на тот же размер обратно колонки, чтобы они за контейнер не вылазили*/
+	flex: 0 1 50%; /* Запрещаю колонке увеличиваться, позволяю уменьшаться, размер 50 % */
+	margin: 0 0 40px 0;
+}
+.summary__item {
+	padding: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+	border: 1px solid black;
+	border-radius: 20px;
+}
+
+.item__body {
+	flex: 1 1 auto;
+}
+.item__title {
+	margin-bottom: 20px;
+	font-size: 25px;
+	font-weight: 700;
+	line-height: 40px;
+}
+
+.summary__item-skills {
+	list-style-position: inside;
+}
+
+.title {
+	font-size: 28px;
+	line-height: 45px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.experience {
+	padding: 40px 0 60px 0;
+	background-color: #f5f5f5;
+}
+
+.experience__title {
+	text-align: center;
+	margin: 0px 0px 10px 0px;
+}
+
+.experience__title__text {
+	text-align: center;
+	margin: 0px 0px 30px 0px;
+}
+
+.experience__items {
+	max-width: 850px;
+	margin: 0 auto;
+}
+
+.experience__items-row {
+	display: flex;
+	margin: 0px -25px;
+}
+.experience__items-column {
+	flex: 0 1 50%; /* запрещаю флексу увеличиваться, разрешаю уменьшаться */
+	padding: 0px 25px;
+}
+.experience__item {
+	/* background-color: black; */
+	color: black;
+}
+.experience__subtitle {
+	text-align: center;
+	/* font-style: 24px; */
+	padding: 12px 18px;
+	/* font-weight: 600; */
+	/* text-decoration: underline; */
+}
+.experience__img {
+	border-radius: 5px;
+}
+
+.experience__img:hover {
+	transition: all .5s;
+	opacity: 0.75;
+	/* outline: 3px solid black;
+	border-radius: 5px; */
+}
+
+.footer {
+	min-height: 150px;
+	background-color: #292f31;
+	padding: 40px 0 10px 0;
+}
+
+.footer__content {
+	text-align: center;
+	color: #c5c6c7;
+	font-size: 15px;
+}
+
+.footer img {
+	width: 100px;
+}
+
+.footer__figure {
+	padding-top: 15px;
+}
+
+.footer__figcaption {
+	color: black;
+}
+
+.footer__down {
+	padding: 15px 0px 0px 0px;
+	font-size: 10px;
+	color: #c5c6c7;
+	text-align: center;
+}
